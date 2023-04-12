@@ -1,0 +1,22 @@
+{
+  "name": "lightning-not-optional",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.40.10",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*",
+    "sass": "^1.61.0",
+    "slidev-theme-eloc": "^1.0.1",
+    "slidev-theme-geist": "^0.8.1",
+    "slidev-theme-penguin": "^1.6.1",
+    "slidev-theme-unicorn": "^1.1.1"
+  },
+  "devDependencies": {
+    "@iconify-json/logos": "^1.1.24"
+  }
+}
