@@ -42,17 +42,17 @@ transition: fade-out
 
 <div class="grid grid-cols-12 gap-10">
 	<div class="col-span-4 bg-slate-100 p-6 gap-4 rounded-md">
-		<img src="assets/me.jpg" class="rounded shadow mb-4" />
+		<img src="/assets/me.jpg" class="rounded shadow mb-4" />
 		<div class="font-bold">Rostislav Dascal</div>
 		<div>@BetssonGroup</div>
 	</div>
 	<div class="grid gap-4 grid-cols-5 relative col-span-8 p-4">
-		<img src="assets/tara.png" class="rounded shadow  col-span-2 relative rotate-1 left-2" />
-		<img src="assets/coffee.jpg" class="rounded shadow rotate--2" />
-		<img src="assets/malta.jpg" class="rounded shadow rotate--1 col-span-2 row-span-2" />
-		<img src="assets/travel.jpg" class="rounded shadow rotate-1" />
-		<img src="assets/food.jpg" class="rounded shadow rotate--1" />
-		<img src="assets/malta_sea.jpg" class="rounded shadow roatate--3"/>
+		<img src="/assets/tara.png" class="rounded shadow  col-span-2 relative rotate-1 left-2" />
+		<img src="/assets/coffee.jpg" class="rounded shadow rotate--2" />
+		<img src="/assets/malta.jpg" class="rounded shadow rotate--1 col-span-2 row-span-2" />
+		<img src="/assets/travel.jpg" class="rounded shadow rotate-1" />
+		<img src="/assets/food.jpg" class="rounded shadow rotate--1" />
+		<img src="/assets/malta_sea.jpg" class="rounded shadow roatate--3"/>
 	</div>
 </div>
 
@@ -64,23 +64,23 @@ transition: fade-out
 
 <div class="grid grid-cols-12 gap-10">
 	<div class="col-span-4 bg-slate-100 p-6 gap-4 rounded-md">
-		<img src="assets/me.jpg" class="rounded shadow mb-4" />
+		<img src="/assets/me.jpg" class="rounded shadow mb-4" />
 		<div class="font-bold">Rostislav Dascal</div>
 		<div>@BetssonGroup</div>
 	</div>
 	<div class="grid gap-4 grid-cols-5 relative col-span-8 p-4">
-		<img src="assets/tech/vercel.jpg" class="rounded  roate-1" />
-		<img src="assets/tech/nextjs.webp" class="rounded  roate-1" />
-		<img src="assets/tech/astro.svg" class="rounded  roate-1" />
-		<img src="assets/tech/cloudflare.png" class="rounded  roate-1" />
-		<img src="assets/tech/upstash.svg" class="rounded  roate-1" />
-		<img src="assets/tech/trpc.svg" class="rounded  roate-1" />
-		<img src="assets/tech/node.webp" class="rounded  roate-1" />
-		<img src="assets/tech/angular.png" class="rounded  roate-1" />
-		<img src="assets/tech/vscode.png" class="rounded  roate-1" />
-		<img src="assets/tech/react.png" class="rounded  roate-1" />
-		<img src="assets/tech/stencil.png" class="rounded  roate-1" />
-		<img src="assets/tech/appwrite.svg" class="rounded  roate-1" />
+		<img src="/assets/tech/vercel.jpg" class="rounded  roate-1" />
+		<img src="/assets/tech/nextjs.webp" class="rounded  roate-1" />
+		<img src="/assets/tech/astro.svg" class="rounded  roate-1" />
+		<img src="/assets/tech/cloudflare.png" class="rounded  roate-1" />
+		<img src="/assets/tech/upstash.svg" class="rounded  roate-1" />
+		<img src="/assets/tech/trpc.svg" class="rounded  roate-1" />
+		<img src="/assets/tech/node.webp" class="rounded  roate-1" />
+		<img src="/assets/tech/angular.png" class="rounded  roate-1" />
+		<img src="/assets/tech/vscode.png" class="rounded  roate-1" />
+		<img src="/assets/tech/react.png" class="rounded  roate-1" />
+		<img src="/assets/tech/stencil.png" class="rounded  roate-1" />
+		<img src="/assets/tech/appwrite.svg" class="rounded  roate-1" />
 	</div>
 </div>
 
@@ -103,12 +103,20 @@ layout: default
 layout: default
 ---
 
-# NodeJS introduced in ~2012 (storytelling)
+# NodeJS introduced in ~2009 (storytelling)
 
 
 ---
 layout: default
 ---
+
+# NodeJS introduced in ~2009 P2w (storytelling)
+
+
+---
+layout: default
+---
+
 
 # Hydration
 
