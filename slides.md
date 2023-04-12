@@ -68,35 +68,47 @@ transition: fade-out
 		<div class="font-bold">Rostislav Dascal</div>
 		<div>@BetssonGroup</div>
 	</div>
-	<div class="grid gap-4 grid-cols-5 relative col-span-8 p-4">
+	<div class="grid gap-4 grid-cols-5 relative col-span-8 p-4 items-center">
 		<img src="/assets/tech/vercel.jpg" class="rounded  roate-1" />
 		<img src="/assets/tech/nextjs.webp" class="rounded  roate-1" />
 		<img src="/assets/tech/astro.svg" class="rounded  roate-1" />
 		<img src="/assets/tech/cloudflare.png" class="rounded  roate-1" />
 		<img src="/assets/tech/upstash.svg" class="rounded  roate-1" />
-		<img src="/assets/tech/trpc.svg" class="rounded  roate-1" />
-		<img src="/assets/tech/node.webp" class="rounded  roate-1" />
-		<img src="/assets/tech/angular.png" class="rounded  roate-1" />
-		<img src="/assets/tech/vscode.png" class="rounded  roate-1" />
 		<img src="/assets/tech/react.png" class="rounded  roate-1" />
+		<img src="/assets/tech/nodejs.svg" class="rounded  roate-1" />
+		<img src="/assets/tech/tailwind.png" class="rounded  roate-1" />
 		<img src="/assets/tech/stencil.png" class="rounded  roate-1" />
-		<img src="/assets/tech/appwrite.svg" class="rounded  roate-1" />
+		<img src="/assets/tech/appwrite.png" class="rounded  roate-1" />
+		<img src="/assets/tech/trpc.svg" class="rounded  roate-1" />
+		<img src="/assets/tech/vscode.png" class="rounded  roate-1" />
+		<img src="/assets/tech/angular.png" class="rounded  roate-1" />
 	</div>
+</div>
+
+<v-click>
+<div class="text-8xl fixed right-20 bottom-20 animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite]">
+	❤️
+	<span class="absolute inset-0 top--2 justify-center items-center flex w-full h-full text-red-200 text-xl font-bold">SSR</span>
+</div>
+</v-click>
+
+---
+layout: default
+class: 'bg-slate-600 text-slate-100 text-center'
+---
+
+
+# What is SSR / SSG?
+
+<div class="flex gap-10">
+	<img src="/assets/diagrams/csr.png" class="rounded max-w-100 roate-1" />
+	<img src="/assets/diagrams/ssr.png" class="rounded max-w-100  roate-1" />
 </div>
 
 ---
 layout: default
 ---
-
-# What is SSR?
-
-
----
-layout: default
----
-
 # SSR in PHP
-
 
 
 ---
@@ -116,6 +128,20 @@ layout: default
 ---
 layout: default
 ---
+
+# Why do we need SSR / SSG?
+
+---
+layout: default
+---
+
+# NextJS 13 Features
+
+---
+layout: default
+---
+
+
 
 
 # Hydration
@@ -138,7 +164,7 @@ layout: default
 layout: default
 ---
 
-# Streaming SSR
+# Streaming SSR / SSG
 
 
 ---
