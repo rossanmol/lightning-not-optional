@@ -5,14 +5,14 @@ class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## SLightning-Fast Web
+  ## Building Lightning-Fast Web
 
   Presentation slides for developers.
 drawings:
   persist: false
 transition: slide-left
 css: unocss
-title: Welcome to Slidev
+title: Building Lightning-Fast Web
 ---
 
 # Building Lightning-Fast Web
