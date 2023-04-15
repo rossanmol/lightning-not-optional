@@ -82,6 +82,7 @@ transition: fade-out
 		<img src="/assets/tech/trpc.svg" class="rounded  roate-1" />
 		<img src="/assets/tech/vscode.png" class="rounded  roate-1" />
 		<img src="/assets/tech/angular.png" class="rounded  roate-1" />
+		<img src="/assets/tech/meilisearch.png" class="rounded  roate-1" />
 	</div>
 </div>
 
@@ -148,7 +149,7 @@ layout: default
 
 # A random package.json
 
-```json
+```json {all} {maxHeight:'400px'}
 "dependencies": {
     "@angular/animations": "^14.2.0",
     "@angular/cdk": "^14.2.0",
@@ -186,7 +187,7 @@ layout: default
 
 <v-click>
 	<div class="absolute bottom-0 left-0 right-0 mx-auto grid justify-center items-center justify-items-center">
-		<span class="text-red text-center">😁 hint: 20 lines more below... </span>
+		<span class="text-red text-center">😁 hint: ~10 lines below... </span>
 		<img src="/assets/diagrams/arrow-down.png" class="max-w-20" />
 	</div>
 </v-click>
@@ -325,36 +326,132 @@ layout: default
 layout: default
 ---
 
-# NodeJS introduced in ~2009 P2w (storytelling)
+# Besides some differences...
+
+<div class="grid grid-cols-3 gap-1 mt-10">
+	<div class="font-bold bg-slate-300 rounded text-center">Feature</div>
+	<div class="font-bold bg-slate-300 rounded text-center">NodeJS</div>
+	<div class="font-bold bg-slate-300 rounded text-center">Browser API</div>
+	<div class="font-bold bg-slate-300 rounded text-center">DOM</div>
+	<div class="font-bold bg-slate-200 rounded text-center">❌</div>
+	<div class="font-bold bg-slate-200 rounded text-center">✅</div>
+	<div class="font-bold bg-slate-300 rounded text-center">Window</div>
+	<div class="font-bold bg-slate-200 rounded text-center">❌</div>
+	<div class="font-bold bg-slate-200 rounded text-center">✅</div>
+	<div class="font-bold bg-slate-300 rounded text-center">File System</div>
+	<div class="font-bold bg-slate-200 rounded text-center">✅</div>
+	<div class="font-bold bg-slate-200 rounded text-center">❌</div>
+	<div class="font-bold bg-slate-300 rounded text-center">Environment</div>
+	<div class="font-bold bg-slate-200 rounded text-center">Server</div>
+	<div class="font-bold bg-slate-200 rounded text-center">Client</div>
+	<div class="font-bold bg-slate-300 rounded text-center">Type of apps</div>
+	<div class="font-bold bg-slate-200 rounded text-center">Web</div>
+	<div class="font-bold bg-slate-200 rounded text-center">CLI/Services</div>
+	<div class="font-bold bg-slate-300 rounded text-center">...</div>
+	<div class="font-bold bg-slate-200 rounded text-center">...</div>
+	<div class="font-bold bg-slate-200 rounded text-center">...</div>
+</div>
+
+
+
+---
+layout: default
+transition: slide-up
+---
+
+
+#### JS in Browser
+
+```ts
+const a = 4;
+const b = 38;
+
+console.log(a + b); // 42
+```
+
+#### NodeJS
+
+```ts
+const a = 4;
+const b = 38;
+
+console.log(a + b); // 42
+```
+
+<v-click>
+	<h1 class="mt-20 text-center">It's all same</h1>
+</v-click>
+
+---
+layout: default
+---
+
+```ts
+import { Window } from 'happy-dom'; // alternatives JSDOM / LinkeDOM
+
+const { document } = new Window({
+	innerWidth: 1024,
+	innerHeight: 768,
+	url: 'http://localhost:8080'
+});
+document.write(`
+    <html>
+        <head>
+             <title>Test page</title>
+        </head>
+        <body>
+			<div class="container"> </div>
+            <script>
+                const element = document.createElement('div');
+                const container = document.querySelector('.container');
+                element.innerHTML = 'SSR is awesome!';
+                container.appendChild(element);
+            </script>
+        </body>
+    </html>
+`);
+
+// Will output "SSR is awesome!"
+console.log(document.querySelector('.container div').innerHTML);
+```
+
+
+---
+layout: center
+---
+
+
+# NextJS Demo Time
+
+---
+layout: center
+---
+
+# But before that...
+
+---
+layout: default
+---
+
+
+
+# What is NextJS?
 
 
 ---
 layout: default
 ---
 
-# Why do we need SSR / SSG?
+# Demo Time 🎉
 
----
-layout: default
----
-
-# NextJS 13 Features
-
----
-layout: default
----
-
-
-
-
-# Hydration
-
-
----
-layout: default
----
-
-# Partial Hydration
+<div class="flex justify-center justify-items-center flex-col gap-10">
+	<div class="flex justify-center">
+		<a href="https://lightining-not-optional-app.vercel.app" class="inline" target="_blank">lightining-not-optional-app.vercel.app</a>
+	</div>
+	<div class="flex justify-center">
+		<img src="/assets/diagrams/qr.app.png" class="max-w-100">
+	</div>
+</div>
 
 ---
 layout: default
@@ -362,12 +459,61 @@ layout: default
 
 # Server Side Components
 
+<div class="grid grid-cols-[4fr_100px_100px] gap-1">
+	<div class="p-1 text-sm bg-slate-300 rounded">What do you need to do?</div>
+	<div class="p-1 text-sm bg-slate-300 rounded text-center">Browser</div>
+	<div class="p-1 text-sm bg-slate-300 rounded text-center">Server</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Fetch data.</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-center">⚠️</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Access backend resources (directly)</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Keep sensitive information on the server (access tokens, API keys, etc)</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Keep large dependencies on the server / Reduce client-side JavaScript</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Add interactivity and event listeners (onClick(), onChange(), etc)</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Use State and Lifecycle Effects (useState(), useReducer(), useEffect(), etc)</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Use browser-only APIs</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Use custom hooks that depend on state, effects, or browser-only APIs</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-center">✅</div>
+</div>
+
+<div class="text-gray text-italic absolute bottom-1 w-full text-center text-xs">* Diagram borrowed from nextjs.org</div>
+---
+layout: default
+class: 'bg-slate-600 text-slate-100 text-center'
+---
+
+# Traditional SSR
+
+
+<div class="flex justify-center">
+	<img src="/assets/diagrams/ssr-hydration.webp" class="max-w-150">
+</div>
+<div class="text-gray text-italic absolute bottom-1 w-full text-center text-xs">* Diagram borrowed from nextjs.org</div>
 
 ---
 layout: default
+class: 'bg-slate-600 text-slate-100 text-center'
 ---
+# Streaming SSR
 
-# Streaming SSR / SSG
+<div class="flex justify-center">
+	<img src="/assets/diagrams/ssr-streaming.webp" class="max-w-150">
+</div>
+
+<div class="text-gray text-italic absolute bottom-1 w-full text-center text-xs">* Diagram borrowed from nextjs.org</div>
 
 
 ---
@@ -378,3 +524,13 @@ layout: default
 
 
 ---
+layout: default
+---
+
+# Other Meta-Frameworks
+
+- Nuxt
+- AstroJS
+- Remix
+- Lit
+- Gatsby
