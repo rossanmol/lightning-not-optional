@@ -2,12 +2,12 @@
 theme: default
 background: https://logicwebmedia.s3.amazonaws.com/wp-content/uploads/20170328153215/website-speed-ranking-factors-graphic.jpg
 class: text-center
+fonts:
+  serif: 'Gloria Hallelujah'
 highlighter: shiki
-lineNumbers: false
+lineNumbers: true
 info: |
   ## Building Lightning-Fast Web
-
-  Presentation slides for developers.
 drawings:
   persist: false
 transition: slide-left
@@ -25,14 +25,18 @@ title: Building Lightning-Fast Web
 
 <div class="abs-br m-6 flex gap-2">
   <a href="https://github.com/rossanmol" target="_blank" alt="GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
+    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-gray">
     <carbon-logo-github />
   </a>
+    <a href="https://twitter.com/rossanmol" target="_blank" alt="GitHub"
+    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-gray">
+    <carbon-logo-twitter />
+  </a>
+	<a href="https://linkedin.com/in/rossanmol" target="_blank" alt="GitHub"
+    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-gray">
+    <carbon-logo-linkedin />
+  </a>
 </div>
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
 
 ---
 transition: fade-out
@@ -93,11 +97,69 @@ transition: fade-out
 	</div>
 </v-click>
 
+<!--
+- NextJS to build an application over the weekend.
+- Astro works like a very good alternative for simpler websites, - where you don't need much interactivity.
+- Vercel to help me get this apps to the users.
+-
+-->
+
+---
+class: 'bg-slate-200'
+---
+<h2 class="font-serif">And... 12 points go to...</h2>
+
+<img src="/assets/diagrams/eurovision.png" class="max-w-20 absolute top-5 left-100">
+<div class="grid grid-flow-col gap-20 mt-20">
+	<div class="grid justify-center justify-items-center items-start rounded-lg bg-white p-4">
+		<h4 class="underline">Step 1: Open Pagespeed</h4>
+		<div>Enter a URL of a website</div>
+		<img src="/assets/diagrams/qr-pagespeed.png" class="max-w-50"/>
+	</div>
+	<div class="grid justify-center justify-items-center  bg-white rounded-lg p-4">
+		<h4 class="underline">Step 2: Vote!</h4>
+		<div>Select the PageSpeed score you got</div>
+		<img src="/assets/diagrams/qr-pagespeed.png" class="max-w-50"/>
+	</div>
+</div>
+
+
 ---
 layout: fact
 ---
 
-# We have a Problem 😢!
+<div class="grid justify-center gap-10">
+	<h4>Time to build a website</h4>
+	<img src="/assets/diagrams/hacking.gif" class="max-h-50"/>
+</div>
+
+---
+layout: fact
+---
+
+<div class="grid justify-center gap-10">
+	<img src="/assets/diagrams/coffee.png" class="max-h-35"/>
+</div>
+
+---
+layout: default
+---
+
+```html
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Love ❤️</title>
+	</head>
+	<body>
+		<main>...</main>
+	</body>
+</html>
+
+```
+
+
 
 ---
 layout: default
@@ -147,7 +209,7 @@ layout: default
 layout: default
 ---
 
-# A random package.json
+# package.json
 
 ```json {all} {maxHeight:'400px'}
 "dependencies": {
@@ -238,6 +300,28 @@ layout: default
 </html>
 ```
 <img src="/assets/diagrams/angular.png" class="max-w-35 mx-auto"/>
+
+
+---
+layout: fact
+---
+
+## We have a Problem 😢!
+
+---
+
+
+<img src="/assets/diagrams/pagespeed_result.webp" class="max-w-100 mx-auto"/>
+
+
+---
+
+# Why is performance important?
+- 53% of visitors abandon the site if it loads in more than 3s according to a <a href="https://www.blog.google/products/admanager/increase-speed-of-your-mobile-site-wi/" target="_blank">study by google</a>.
+- 2x more revenue <a href="https://support.google.com/webmasters/answer/9205520?hl=en" target="_blank">observed</a> for sites that loaded in 5 seconds instead of 19 seconds.
+- Google <a href="https://developers.google.com/search/blog/2010/04/using-site-speed-in-web-search-ranking" target="_blank">confirmed</a> that PageSpeed and Core Web Vitals score affect SEO performance.
+- When a site meets the Core Web Vitals thresholds, <a href="https://support.google.com/webmasters/answer/9205520?hl=en" target="_blank" >research</a> showed that users were 24% less likely to abandon page load.
+- With each 100ms reduction in Largest Contentful Paint (LCP), web conversion rate for Farfetch <a href="https://web.dev/farfetch/?sjid=6308638093187460259-EU" target="_blank">increased</a> by 1.3%.
 
 ---
 layout: default
@@ -433,11 +517,13 @@ layout: center
 layout: default
 ---
 
-
-
 # What is NextJS?
 
+<div class="mx-auto text-gray mt-20">
+... is an <strong class="text-2xl text-black">open-source web development framework</strong> created by the private company Vercel providing <strong class="text-2xl text-black">React-based</strong> web applications with <strong class="text-2xl text-black">server-side rendering</strong> and static website generation.
 
+With Next.js, developers can create <strong class="text-2xl text-black">dynamic web pages</strong> that can be pre-rendered and served statically or rendered on the server, providing a <strong class="text-2xl text-black">better user experience</strong> in terms of speed and search engine optimization (<strong class="text-2xl text-black">SEO</strong>). Next.js also comes with features such as automatic code splitting, static file serving, and easy integration with data sources such as APIs and databases.
+</div>
 ---
 layout: default
 ---
@@ -492,9 +578,28 @@ layout: default
 <div class="text-gray text-italic absolute bottom-1 w-full text-center text-xs">* Diagram borrowed from nextjs.org</div>
 ---
 layout: default
-class: 'bg-slate-600 text-slate-100 text-center'
 ---
 
+
+
+
+# Next-Gen Caching
+
+<div class="mt-10"></div>
+```ts
+// the below API call takes ~1.5s to fetch
+fetch('https://example.com/api/cats', {
+	next: {
+		revalidate: 60
+	}
+});
+
+// in reality... it's almost instant
+```
+---
+layout: default
+class: 'bg-slate-600 text-slate-100 text-center'
+---
 # Traditional SSR
 
 
@@ -519,18 +624,59 @@ class: 'bg-slate-600 text-slate-100 text-center'
 ---
 layout: default
 ---
+# Other tools to built great Websites
 
-# Next-Gen Caching
+<div class="grid gap-20 grid-cols-3 relative col-span-8 p-4 items-center justify-items-center mt-20">
+	<img src="/assets/other/nuxtjs.png" class="rounded max-h-15 roate-1" />
+	<img src="/assets/other/astro.svg" class="rounded max-h-15  roate-1" />
+	<img src="/assets/other/gatsby.png" class="rounded max-h-15  roate-1" />
+	<img src="/assets/other/lit.png" class="rounded max-h-15  roate-1" />
+	<img src="/assets/other/qwik.png" class="rounded max-h-15  roate-1" />
+	<img src="/assets/other/remix.png" class="rounded max-h-10  roate-1" />
+</div>
+
+
+---
+layout: default
+---
+# 👏👏👏
+
+<div class="flex justify-center">
+	<img src="/assets/diagrams/pagespeed_result.png" class="max-w-120">
+</div>
+
 
 
 ---
 layout: default
 ---
 
-# Other Meta-Frameworks
+# Cool links 😎
 
-- Nuxt
-- AstroJS
-- Remix
-- Lit
-- Gatsby
+- **These slides**: <a href="https://lightning-not-optional.vercel.app" target="_blank">lightning-not-optional.vercel.app</a>
+- **Meow app**: <a href="https://lightining-not-optional-app.vercel.app" target="_blank">lightining-not-optional-app.vercel.app</a> (notice the typo 😭)
+- <a href="https://nextjs.org/blog/next-13" target="_blank">**NextJS 13 Announcement** </a>
+- <a href="https://beta.nextjs.org/docs/api-reference/metadata#file-based-metadata" target="_blank">**File-based Metadata** </a>
+- <a href="https://zod.dev/" target="_blank">**Zod** </a>
+- <a href="https://turbo.build/" target="_blank">**Turborepo + Turbopack** </a>
+- <a href="https://clerk.com/">**The authentication you need**</a>
+- <a href="https://app.warp.dev/referral/W665GY">**The terminal for the 21st century**</a>
+---
+layout: center
+---
+
+# Thank You!
+<div class="abs-br m-6 flex gap-2">
+  <a href="https://github.com/rossanmol" target="_blank" alt="GitHub"
+    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-gray">
+    <carbon-logo-github />
+  </a>
+    <a href="https://twitter.com/rossanmol" target="_blank" alt="GitHub"
+    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-gray">
+    <carbon-logo-twitter />
+  </a>
+	<a href="https://linkedin.com/in/rossanmol" target="_blank" alt="GitHub"
+    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-gray">
+    <carbon-logo-linkedin />
+  </a>
+</div>
