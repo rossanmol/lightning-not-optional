@@ -150,7 +150,7 @@ layout: default
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Love ❤️</title>
+		<title>Love Love Peace Peace ❤️</title>
 	</head>
 	<body>
 		<main>...</main>
