@@ -547,8 +547,8 @@ layout: default
 
 <div class="grid grid-cols-[4fr_100px_100px] gap-1">
 	<div class="p-1 text-sm bg-slate-300 rounded">What do you need to do?</div>
-	<div class="p-1 text-sm bg-slate-300 rounded text-center">Browser</div>
 	<div class="p-1 text-sm bg-slate-300 rounded text-center">Server</div>
+	<div class="p-1 text-sm bg-slate-300 rounded text-center">Browser</div>
 	<div class="p-1 text-sm bg-slate-200 rounded">Fetch data.</div>
 	<div class="p-1 text-center">✅</div>
 	<div class="p-1 text-center">⚠️</div>
