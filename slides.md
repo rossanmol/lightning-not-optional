@@ -659,8 +659,8 @@ layout: default
 - <a href="https://beta.nextjs.org/docs/api-reference/metadata#file-based-metadata" target="_blank">**File-based Metadata** </a>
 - <a href="https://zod.dev/" target="_blank">**Zod** </a>
 - <a href="https://turbo.build/" target="_blank">**Turborepo + Turbopack** </a>
-- <a href="https://clerk.com/">**The authentication you need**</a>
-- <a href="https://app.warp.dev/referral/W665GY">**The terminal for the 21st century**</a>
+- <a href="https://clerk.com/" target="_blank">**The authentication you need**</a>
+- <a href="https://app.warp.dev/referral/W665GY" target="_blank">**The terminal for the 21st century**</a>
 ---
 layout: center
 ---
