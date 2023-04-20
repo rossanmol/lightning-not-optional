@@ -143,7 +143,7 @@ class: bg-slate-200
 	<div class="grid justify-center justify-items-center  bg-white rounded-lg p-4">
 		<h4 class="underline">Step 2: Vote!</h4>
 		<div>Select the PageSpeed score you got</div>
-		<img src="/assets/diagrams/qr-pagespeed.png" class="max-w-50"/>
+		<img src="/assets/diagrams/qr-poll.png" class="max-w-50"/>
 	</div>
 </div>
 
@@ -905,6 +905,7 @@ There are many other technologies which do great things for the web, and it woul
 
 Toolls such as NuxtJS, Astro, Gatsby, Lit, Qwik, Remix and Analog.
 -->
+
 
 ---
 layout: default
