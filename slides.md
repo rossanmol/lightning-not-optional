@@ -159,8 +159,6 @@ layout: default
 
 ```
 
-
-
 ---
 layout: default
 ---
@@ -181,6 +179,7 @@ layout: default
 
 ```
 <img src="/assets/diagrams/jquery.svg" class="max-w-100 mx-auto"/>
+
 
 
 ---
@@ -206,53 +205,30 @@ layout: default
 
 
 ---
-layout: default
+layout: fact
+class: 'bg-slate-600 text-slate-100 text-center'
 ---
 
-# package.json
+<img src="/assets/diagrams/wireframe.webp" class="max-w-100 mx-auto"/>
 
-```json {all} {maxHeight:'400px'}
-"dependencies": {
-    "@angular/animations": "^14.2.0",
-    "@angular/cdk": "^14.2.0",
-    "@angular/common": "^14.2.0",
-    "@angular/compiler": "^14.2.0",
-    "@angular/core": "^14.2.0",
-    "@angular/elements": "^14.2.0",
-    "@angular/forms": "^14.2.0",
-    "@angular/localize": "^14.2.0",
-    "@angular/material": "^14.2.0",
-    "@angular/platform-browser": "^14.2.0",
-    "@angular/platform-browser-dynamic": "^14.2.0",
-    "@angular/router": "^14.2.0",
-    "ajv": "8.11.0",
-    "arrive": "2.4.1",
-    "bootstrap": "4.6.1",
-    "bootstrap-material-design": "4.1.3",
-    "bootstrap-notify": "3.1.3",
-    "chartist": "0.11.4",
-    "classlist.js": "1.1.20150312",
-    "eslint": "^8.11.0",
-    "express": "4.17.3",
-    "googleapis": "99.0.0",
-    "hammerjs": "2.0.8",
-    "jquery": "3.6.0",
-    "moment": "2.29.1",
-    "perfect-scrollbar": "1.5.5",
-    "popper.js": "1.16.1",
-    "rxjs": "~7.5.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.11.4",
-    "web-animations-js": "2.3.2"
-  },
-```
+<div className="fixed top-20 left-60 text-5xl">✨</div>
+<div className="fixed top-60 left-70 text-5xl">✨</div>
+<div className="fixed top-75 right-65 text-5xl">✨</div>
+<div className="fixed top-30 left-55 text-5xl">✨</div>
 
-<v-click>
-	<div class="absolute bottom-0 left-0 right-0 mx-auto grid justify-center items-center justify-items-center">
-		<span class="text-red text-center">😁 hint: ~10 lines below... </span>
-		<img src="/assets/diagrams/arrow-down.png" class="max-w-20" />
-	</div>
-</v-click>
+<div className="fixed bottom-15 right-50 text-6">😍</div>
+
+---
+layout: fact
+---
+
+## We have a Problem 😢!
+
+---
+
+<img src="/assets/diagrams/pagespeed_result.webp" class="max-w-100 mx-auto"/>
+
+
 
 
 ---
@@ -301,19 +277,7 @@ layout: default
 ```
 <img src="/assets/diagrams/angular.png" class="max-w-35 mx-auto"/>
 
-
 ---
-layout: fact
----
-
-## We have a Problem 😢!
-
----
-
-
-<img src="/assets/diagrams/pagespeed_result.webp" class="max-w-100 mx-auto"/>
-
-
 ---
 
 # Why is performance important?
@@ -328,7 +292,6 @@ layout: default
 class: 'bg-slate-600 text-slate-100 text-center'
 ---
 
-
 # Client Side Rendering (SPA)
 
 <div class="grid justify-center gap-5">
@@ -336,6 +299,20 @@ class: 'bg-slate-600 text-slate-100 text-center'
 </div>
 
 <span class="text-gray text-italic absolute bottom-1 left-0 right-0 mx-auto text-xs">* Diagram borrowed from nextjs.org</span>
+
+---
+layout: default
+class: 'bg-slate-600 text-slate-100 text-center'
+---
+
+
+# Client Side Rendering (SPA)
+
+<div class="grid justify-center gap-5">
+	<img src="/assets/diagrams/network-4g.png" class="rounded max-w-150 roate-1" />
+</div>
+
+
 
 ---
 layout: default
@@ -402,7 +379,7 @@ layout: default
 <div class="grid gap-5 justify-items-center">
 	<img src="/assets/diagrams/nodejs.svg" class="max-w-30 mb-10" />
 	<div class="bg-slate-200 rounded p-2">NodeJS announced in 2009 by Ryan Dahl</div>
-	<div class="bg-slate-200 rounded p-2">Build on Google V8</div>
+	<div class="bg-slate-200 rounded p-2">Built on Google V8</div>
 	<div class="bg-slate-200 rounded p-2">NPM announced in 2011</div>
 </div>
 
@@ -429,8 +406,8 @@ layout: default
 	<div class="font-bold bg-slate-200 rounded text-center">Server</div>
 	<div class="font-bold bg-slate-200 rounded text-center">Client</div>
 	<div class="font-bold bg-slate-300 rounded text-center">Type of apps</div>
-	<div class="font-bold bg-slate-200 rounded text-center">Web</div>
 	<div class="font-bold bg-slate-200 rounded text-center">CLI/Services</div>
+	<div class="font-bold bg-slate-200 rounded text-center">Web</div>
 	<div class="font-bold bg-slate-300 rounded text-center">...</div>
 	<div class="font-bold bg-slate-200 rounded text-center">...</div>
 	<div class="font-bold bg-slate-200 rounded text-center">...</div>
@@ -541,45 +518,22 @@ layout: default
 
 ---
 layout: default
+class: 'bg-slate-600 text-slate-100 text-center'
 ---
 
-# Server Side Components
+# FS-based routing
 
-<div class="grid grid-cols-[4fr_100px_100px] gap-1">
-	<div class="p-1 text-sm bg-slate-300 rounded">What do you need to do?</div>
-	<div class="p-1 text-sm bg-slate-300 rounded text-center">Server</div>
-	<div class="p-1 text-sm bg-slate-300 rounded text-center">Browser</div>
-	<div class="p-1 text-sm bg-slate-200 rounded">Fetch data.</div>
-	<div class="p-1 text-center">✅</div>
-	<div class="p-1 text-center">⚠️</div>
-	<div class="p-1 text-sm bg-slate-200 rounded">Access backend resources (directly)</div>
-	<div class="p-1 text-center">✅</div>
-	<div class="p-1 text-center">❌</div>
-	<div class="p-1 text-sm bg-slate-200 rounded">Keep sensitive information on the server (access tokens, API keys, etc)</div>
-	<div class="p-1 text-center">✅</div>
-	<div class="p-1 text-center">❌</div>
-	<div class="p-1 text-sm bg-slate-200 rounded">Keep large dependencies on the server / Reduce client-side JavaScript</div>
-	<div class="p-1 text-center">✅</div>
-	<div class="p-1 text-center">❌</div>
-	<div class="p-1 text-sm bg-slate-200 rounded">Add interactivity and event listeners (onClick(), onChange(), etc)</div>
-	<div class="p-1 text-center">❌</div>
-	<div class="p-1 text-center">✅</div>
-	<div class="p-1 text-sm bg-slate-200 rounded">Use State and Lifecycle Effects (useState(), useReducer(), useEffect(), etc)</div>
-	<div class="p-1 text-center">❌</div>
-	<div class="p-1 text-center">✅</div>
-	<div class="p-1 text-sm bg-slate-200 rounded">Use browser-only APIs</div>
-	<div class="p-1 text-center">❌</div>
-	<div class="p-1 text-center">✅</div>
-	<div class="p-1 text-sm bg-slate-200 rounded">Use custom hooks that depend on state, effects, or browser-only APIs</div>
-	<div class="p-1 text-center">❌</div>
-	<div class="p-1 text-center">✅</div>
+<div class="flex justify-center justify-items-center flex-col gap-10">
+	<div class="flex justify-center">
+		<img src="/assets/diagrams/route-segments.webp" class="max-w-150">
+	</div>
 </div>
 
 <div class="text-gray text-italic absolute bottom-1 w-full text-center text-xs">* Diagram borrowed from nextjs.org</div>
+
 ---
 layout: default
 ---
-
 
 
 
@@ -620,6 +574,43 @@ class: 'bg-slate-600 text-slate-100 text-center'
 
 <div class="text-gray text-italic absolute bottom-1 w-full text-center text-xs">* Diagram borrowed from nextjs.org</div>
 
+---
+layout: default
+---
+
+# Server Side Components
+
+<div class="grid grid-cols-[4fr_100px_100px] gap-1">
+	<div class="p-1 text-sm bg-slate-300 rounded">What do you need to do?</div>
+	<div class="p-1 text-sm bg-slate-300 rounded text-center">Server</div>
+	<div class="p-1 text-sm bg-slate-300 rounded text-center">Browser</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Fetch data.</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-center">⚠️</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Access backend resources (directly)</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Keep sensitive information on the server (access tokens, API keys, etc)</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Keep large dependencies on the server / Reduce client-side JavaScript</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Add interactivity and event listeners (onClick(), onChange(), etc)</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Use State and Lifecycle Effects (useState(), useReducer(), useEffect(), etc)</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Use browser-only APIs</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-center">✅</div>
+	<div class="p-1 text-sm bg-slate-200 rounded">Use custom hooks that depend on state, effects, or browser-only APIs</div>
+	<div class="p-1 text-center">❌</div>
+	<div class="p-1 text-center">✅</div>
+</div>
+
+<div class="text-gray text-italic absolute bottom-1 w-full text-center text-xs">* Diagram borrowed from nextjs.org</div>
 
 ---
 layout: default
