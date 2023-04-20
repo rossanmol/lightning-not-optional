@@ -1,9 +1,10 @@
 ---
 theme: default
-background: https://logicwebmedia.s3.amazonaws.com/wp-content/uploads/20170328153215/website-speed-ranking-factors-graphic.jpg
+background: >-
+  https://logicwebmedia.s3.amazonaws.com/wp-content/uploads/20170328153215/website-speed-ranking-factors-graphic.jpg
 class: text-center
 fonts:
-  serif: 'Gloria Hallelujah'
+  serif: Gloria Hallelujah
 highlighter: shiki
 lineNumbers: true
 info: |
@@ -38,6 +39,16 @@ title: Building Lightning-Fast Web
   </a>
 </div>
 
+<!--
+We will go through the journey of building a lightining fast application.
+There is so much to cover on this topic, but we only have 30 minutes.
+My goal is too show you some cool features and get you excited so that you go home and start building something cool
+
+Plan -> Journey of building a lightining fast application.
+Limit -> 30 minutes
+Goal -> Show some cool features, so that you go home and build something cool
+-->
+
 ---
 transition: fade-out
 ---
@@ -59,6 +70,17 @@ transition: fade-out
 		<img src="/assets/malta_sea.jpg" class="rounded shadow roatate--3"/>
 	</div>
 </div>
+
+<!--
+A little bit about me...
+
+I love cooking, and coffee is something that I love even more
+That's my cat Tara, she is "helping me" with most of the work.
+
+I come from a tiny and sunny island called Malta
+The summer season is coming, and you're just 1 flight away.
+So pack your lagguages, and come! :)
+-->
 
 ---
 transition: fade-out
@@ -98,15 +120,17 @@ transition: fade-out
 </v-click>
 
 <!--
-- NextJS to build an application over the weekend.
-- Astro works like a very good alternative for simpler websites, - where you don't need much interactivity.
-- Vercel to help me get this apps to the users.
--
+Here is the technologies I use in my day to day projects
+
+Some special ones here are NextJS, TRPC and MeiliSearch.
+
+And of course, something which I have focused a lot in my career is SSR.
 -->
 
 ---
-class: 'bg-slate-200'
+class: bg-slate-200
 ---
+
 <h2 class="font-serif">And... 12 points go to...</h2>
 
 <img src="/assets/diagrams/eurovision.png" class="max-w-20 absolute top-5 left-100">
@@ -123,6 +147,17 @@ class: 'bg-slate-200'
 	</div>
 </div>
 
+<!--
+I forgot to mention that I love Eurovision
+
+It's an event with so much culture, and so many great songs.
+And of course, the best part is voting.
+
+I have a small request for all of you, if you can...
+Open Pagespeeg, enter the URL of a website you worked on recently, or just any website you know.
+
+And then scan QR code from Step 2, and submit the overall score you got.
+-->
 
 ---
 layout: fact
@@ -133,6 +168,16 @@ layout: fact
 	<img src="/assets/diagrams/hacking.gif" class="max-h-50"/>
 </div>
 
+<!--
+So...
+
+
+it's time to build a very beautiful website...
+
+
+We get the laptop out, start typing...
+-->
+
 ---
 layout: fact
 ---
@@ -140,6 +185,13 @@ layout: fact
 <div class="grid justify-center gap-10">
 	<img src="/assets/diagrams/coffee.png" class="max-h-35"/>
 </div>
+
+<!--
+Oh, we forgot the coffee...
+So let's get coffee first
+
+The smell is just so good...
+-->
 
 ---
 layout: default
@@ -158,6 +210,12 @@ layout: default
 </html>
 
 ```
+
+<!--
+And after a very short time...
+
+Our code probably looks like that
+-->
 
 ---
 layout: default
@@ -180,7 +238,12 @@ layout: default
 ```
 <img src="/assets/diagrams/jquery.svg" class="max-w-100 mx-auto"/>
 
+<!--
+And to add some interactivity we can use jQuery
+And let's not forget the huge file called "all the js in the world"
 
+Oh well, maybe we could make use of a framework which will add some kind of lazy loading...
+-->
 
 ---
 layout: default
@@ -203,10 +266,13 @@ layout: default
 ```
 <img src="/assets/diagrams/angular.png" class="max-w-35 mx-auto"/>
 
+<!--
+Angular is cool, so let's use that.
+-->
 
 ---
 layout: fact
-class: 'bg-slate-600 text-slate-100 text-center'
+class: bg-slate-600 text-slate-100 text-center
 ---
 
 <img src="/assets/diagrams/wireframe.webp" class="max-w-100 mx-auto"/>
@@ -218,23 +284,90 @@ class: 'bg-slate-600 text-slate-100 text-center'
 
 <div className="fixed bottom-15 right-50 text-6">😍</div>
 
+<!--
+And the site is ready, so beautiful and nice.
+-->
+
 ---
 layout: fact
 ---
 
 ## We have a Problem 😢!
 
+<!--
+But... We have a problem :(
+-->
+
 ---
 
 <img src="/assets/diagrams/pagespeed_result.webp" class="max-w-100 mx-auto"/>
 
+<!--
+Pagespeed does not like our site.
 
+According to it, it takes around 9s for the website to load for an average user.
 
+Oh, and the score of 44 is quite good, I was lucky enough to see a score of 0, yes , it's possible :D
+-->
+
+---
+layout: default
+---
+
+# package.json
+
+```json {all} {maxHeight:'400px'}
+"dependencies": {
+    "@angular/animations": "^14.2.0",
+    "@angular/cdk": "^14.2.0",
+    "@angular/common": "^14.2.0",
+    "@angular/compiler": "^14.2.0",
+    "@angular/core": "^14.2.0",
+    "@angular/elements": "^14.2.0",
+    "@angular/forms": "^14.2.0",
+    "@angular/localize": "^14.2.0",
+    "@angular/material": "^14.2.0",
+    "@angular/platform-browser": "^14.2.0",
+    "@angular/platform-browser-dynamic": "^14.2.0",
+    "@angular/router": "^14.2.0",
+    "ajv": "8.11.0",
+    "arrive": "2.4.1",
+    "bootstrap": "4.6.1",
+    "bootstrap-material-design": "4.1.3",
+    "bootstrap-notify": "3.1.3",
+    "chartist": "0.11.4",
+    "classlist.js": "1.1.20150312",
+    "eslint": "^8.11.0",
+    "express": "4.17.3",
+    "googleapis": "99.0.0",
+    "hammerjs": "2.0.8",
+    "jquery": "3.6.0",
+    "moment": "2.29.1",
+    "perfect-scrollbar": "1.5.5",
+    "popper.js": "1.16.1",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4",
+    "web-animations-js": "2.3.2"
+  },
+```
+
+<v-click>
+	<div class="absolute bottom-0 left-0 right-0 mx-auto grid justify-center items-center justify-items-center">
+		<span class="text-red text-center">😁 hint: ~10 lines below... </span>
+		<img src="/assets/diagrams/arrow-down.png" class="max-w-20" />
+	</div>
+</v-click>
+
+<!--
+So let's go through our application...
+
+We have a couple of NPM packages that we depend on...
+-->
 
 ---
 layout: default
 transition: fade
-
 ---
 
 ```html {9-10}
@@ -253,6 +386,9 @@ transition: fade
 ```
 <img src="/assets/diagrams/angular.png" class="max-w-35 mx-auto"/>
 
+<!--
+And... if we inspect our bundle size, our app measures almost a megabyte...
+-->
 
 ---
 layout: default
@@ -277,7 +413,12 @@ layout: default
 ```
 <img src="/assets/diagrams/angular.png" class="max-w-35 mx-auto"/>
 
----
+<!--
+And let's not forget the analytics and tracking scripts, and maybe some polyfills for older browsers...
+
+All that adds up in size, and each user will have to download that, and rely on their hardware to run the application.
+-->
+
 ---
 
 # Why is performance important?
@@ -287,9 +428,19 @@ layout: default
 - When a site meets the Core Web Vitals thresholds, <a href="https://support.google.com/webmasters/answer/9205520?hl=en" target="_blank" >research</a> showed that users were 24% less likely to abandon page load.
 - With each 100ms reduction in Largest Contentful Paint (LCP), web conversion rate for Farfetch <a href="https://web.dev/farfetch/?sjid=6308638093187460259-EU" target="_blank">increased</a> by 1.3%.
 
+<img src="/assets/diagrams/old-android-phone.jpeg" class="max-w-50 mx-auto">
+
+<!--
+I could go through each bullet point on this slide...
+
+But in the end it all boils down to the fact, that we as developers are responsible not only to build beautiful and shiny websites, but also ensure that our users get to see them.
+
+A user will open your website, if it lagging or loads in more than 2 or 3 seconds, the user will press back and try another one.
+-->
+
 ---
 layout: default
-class: 'bg-slate-600 text-slate-100 text-center'
+class: bg-slate-600 text-slate-100 text-center
 ---
 
 # Client Side Rendering (SPA)
@@ -300,11 +451,20 @@ class: 'bg-slate-600 text-slate-100 text-center'
 
 <span class="text-gray text-italic absolute bottom-1 left-0 right-0 mx-auto text-xs">* Diagram borrowed from nextjs.org</span>
 
+<!--
+So that's what we have with Client Side Rendering.
+
+We send some HTML and Javascript to the user
+
+The user sees a white page
+
+And then the HTML is computed by the processing power of the user.
+-->
+
 ---
 layout: default
-class: 'bg-slate-600 text-slate-100 text-center'
+class: bg-slate-600 text-slate-100 text-center
 ---
-
 
 # Client Side Rendering (SPA)
 
@@ -312,13 +472,14 @@ class: 'bg-slate-600 text-slate-100 text-center'
 	<img src="/assets/diagrams/network-4g.png" class="rounded max-w-150 roate-1" />
 </div>
 
-
+<!--
+That is highly reliant on the network of the user, but also the Device of the user.
+-->
 
 ---
 layout: default
-class: 'bg-slate-600 text-slate-100 text-center'
+class: bg-slate-600 text-slate-100 text-center
 ---
-
 
 # Server Side Rendering
 <div class="grid justify-center gap-5">
@@ -326,11 +487,16 @@ class: 'bg-slate-600 text-slate-100 text-center'
 </div>
 <span class="text-gray text-italic absolute bottom-1 left-0 right-0 mx-auto text-xs">* Diagram borrowed from nextjs.org</span>
 
+<!--
+With server side rendering, you can process the HTML on the server, and send the final version of the HTML to the user.
+
+We can then reduce the bundle sizes by just shipping code that requires interaction only.
+-->
+
 ---
 layout: default
-class: 'bg-slate-600 text-slate-100 text-center'
+class: bg-slate-600 text-slate-100 text-center
 ---
-
 
 # CSR vs SSR
 <div class="grid justify-center gap-5">
@@ -339,9 +505,14 @@ class: 'bg-slate-600 text-slate-100 text-center'
 </div>
 <span class="text-gray text-italic absolute bottom-1 left-0 right-0 mx-auto text-xs">* Diagrams borrowed from nextjs.org</span>
 
+<!--
+From user perspective, it is definetely more ideal to see some kind of UI at an earlier stage, so that should help with retaining more customers.
+-->
+
 ---
 layout: default
 ---
+
 # SSR via PHP
 
 ```php
@@ -370,11 +541,18 @@ layout: default
 	<img src="/assets/diagrams/php.png" class="max-w-20" />
 </div>
 
+<!--
+And SSR is actually not a new concept...
+Web Development was powered by SSR by default when most of logic would be either in PHP or C#.
+
+Most of the logic was handled by the Server, and the user would just see the final HTML. 
+
+But then Single Page Applications came in, and all the logic moved to the browser.
+-->
+
 ---
 layout: default
 ---
-
-
 
 <div class="grid gap-5 justify-items-center">
 	<img src="/assets/diagrams/nodejs.svg" class="max-w-30 mb-10" />
@@ -382,6 +560,13 @@ layout: default
 	<div class="bg-slate-200 rounded p-2">Built on Google V8</div>
 	<div class="bg-slate-200 rounded p-2">NPM announced in 2011</div>
 </div>
+
+<!--
+In 2009 Ryan Dahl announced NodeJS, and shorty after NPM was announced as well, which allowed developers to share code via packages.
+
+The ecosystem which followed after was just huge...
+When you write code, there is a hich chance that there is NPM package that already does that.
+-->
 
 ---
 layout: default
@@ -413,13 +598,22 @@ layout: default
 	<div class="font-bold bg-slate-200 rounded text-center">...</div>
 </div>
 
+<!--
+Ok, so we have NodeJS and JS in the browser.
 
+How are they different?
+
+There quite a few, but mainly, Node does not have access to DOM and Window, while Browser does.
+
+And Browser does not have direct access to file system while NodeJS does.
+
+And of course, with NodeJS you would be building Server applications such as different Services or CLIs, while with browser JS you can build web applications.
+-->
 
 ---
 layout: default
 transition: slide-up
 ---
-
 
 #### JS in Browser
 
@@ -442,6 +636,14 @@ console.log(a + b); // 42
 <v-click>
 	<h1 class="mt-20 text-center">It's all same</h1>
 </v-click>
+
+<!--
+But if you had to look at these two snippets...
+
+You would realise...
+
+that it's all same...
+-->
 
 ---
 layout: default
@@ -476,13 +678,24 @@ document.write(`
 console.log(document.querySelector('.container div').innerHTML);
 ```
 
+<!--
+And I did mention that NodeJS does not have access to DOM
+
+but that didn't stop developers from creating a virtual DOM interface and deploy those to NPM...
+
+
+So if you have a website, and you want to run it on the website, using a package such as happy-dom, JSDOM or LinkeDOM you can just render it on the server.
+-->
 
 ---
 layout: center
 ---
 
+# NextJS 13 Demo Time
 
-# NextJS Demo Time
+<!--
+Soo... it's time for a Demo
+-->
 
 ---
 layout: center
@@ -501,6 +714,13 @@ layout: default
 
 With Next.js, developers can create <strong class="text-2xl text-black">dynamic web pages</strong> that can be pre-rendered and served statically or rendered on the server, providing a <strong class="text-2xl text-black">better user experience</strong> in terms of speed and search engine optimization (<strong class="text-2xl text-black">SEO</strong>). Next.js also comes with features such as automatic code splitting, static file serving, and easy integration with data sources such as APIs and databases.
 </div>
+
+<!--
+NextJS is react based open source web development frame that allows developers to create dynamic web pages with great user experience and SEO through technologies such as Server Side Rendering.
+
+All that, with the greatest developer experience.
+-->
+
 ---
 layout: default
 ---
@@ -516,9 +736,17 @@ layout: default
 	</div>
 </div>
 
+<!--
+Now! It's time for Demo Time.
+
+We will be going through a small application I built using NextJS 13, my goal was to do it under 2 hours.
+
+Feel free to scan the QR code, if you would like to check it out.
+-->
+
 ---
 layout: default
-class: 'bg-slate-600 text-slate-100 text-center'
+class: bg-slate-600 text-slate-100 text-center
 ---
 
 # FS-based routing
@@ -531,11 +759,33 @@ class: 'bg-slate-600 text-slate-100 text-center'
 
 <div class="text-gray text-italic absolute bottom-1 w-full text-center text-xs">* Diagram borrowed from nextjs.org</div>
 
+<!--
+File based routing:
+	- Easy to split code based on route
+    - Easy for Edge to identify which file should be used for a specific URL
+    - Easy to define logic which is based on route, such as SEO (.
+-->
+
+---
+layout: default
+class: bg-slate-600 text-slate-100 text-center
+---
+
+# FS-based routing
+
+<div class="flex justify-center justify-items-center flex-col gap-10">
+	<div class="flex justify-center">
+		<img src="/assets/diagrams/php-fs.jpeg" class="max-w-150">
+	</div>
+</div>
+
+<!--
+It is also extremely similar to the websites we were building back in the days with PHP. That did work well.
+-->
+
 ---
 layout: default
 ---
-
-
 
 # Next-Gen Caching
 
@@ -550,10 +800,18 @@ fetch('https://example.com/api/cats', {
 
 // in reality... it's almost instant
 ```
+
+<!--
+Fetching different data sources is all handled on the server, and new snapshots for HTML are generated whenever anything changes.
+
+All that is done in the background, while users enjoy the best experience.
+-->
+
 ---
 layout: default
-class: 'bg-slate-600 text-slate-100 text-center'
+class: bg-slate-600 text-slate-100 text-center
 ---
+
 # Traditional SSR
 
 
@@ -562,10 +820,17 @@ class: 'bg-slate-600 text-slate-100 text-center'
 </div>
 <div class="text-gray text-italic absolute bottom-1 w-full text-center text-xs">* Diagram borrowed from nextjs.org</div>
 
+<!--
+At the beginning of the presentation, I went through SSR whichi processes the whole site, and after some time sends it to the user.
+
+What if that is slow?
+-->
+
 ---
 layout: default
-class: 'bg-slate-600 text-slate-100 text-center'
+class: bg-slate-600 text-slate-100 text-center
 ---
+
 # Streaming SSR
 
 <div class="flex justify-center">
@@ -573,6 +838,10 @@ class: 'bg-slate-600 text-slate-100 text-center'
 </div>
 
 <div class="text-gray text-italic absolute bottom-1 w-full text-center text-xs">* Diagram borrowed from nextjs.org</div>
+
+<!--
+NextJS uses HTTP Streaming to Send parts of the website while it continues rendering the rest. This provides a great user experience, where user sees content as soon as possible.
+-->
 
 ---
 layout: default
@@ -612,9 +881,14 @@ layout: default
 
 <div class="text-gray text-italic absolute bottom-1 w-full text-center text-xs">* Diagram borrowed from nextjs.org</div>
 
+<!--
+Server side components are just better for more intensive tasks, especially where a lot of javascript is required, and that ideally remains on the server.
+-->
+
 ---
 layout: default
 ---
+
 # Other tools to built great Websites
 
 <div class="grid gap-20 grid-cols-3 relative col-span-8 p-4 items-center justify-items-center mt-20">
@@ -626,17 +900,25 @@ layout: default
 	<img src="/assets/other/remix.png" class="rounded max-h-10  roate-1" />
 </div>
 
+<!--
+There are many other technologies which do great things for the web, and it would be unfair for me not to mention them...
+
+Toolls such as NuxtJS, Astro, Gatsby, Lit, Qwik, Remix and Analog.
+-->
 
 ---
 layout: default
 ---
+
 # 👏👏👏
 
 <div class="flex justify-center">
 	<img src="/assets/diagrams/pagespeed_result.png" class="max-w-120">
 </div>
 
-
+<!--
+And hopefully, your journey of creating your new project will be rewarded with great user experience, and a high pagespeed score.
+-->
 
 ---
 layout: default
@@ -652,6 +934,13 @@ layout: default
 - <a href="https://turbo.build/" target="_blank">**Turborepo + Turbopack** </a>
 - <a href="https://clerk.com/" target="_blank">**The authentication you need**</a>
 - <a href="https://app.warp.dev/referral/W665GY" target="_blank">**The terminal for the 21st century**</a>
+
+<!--
+I also have some cool links for you, check them out if you have some time.
+
+Some special ones which I really wanted to menion is Zod and TurboRepo, these tools are so simple, but they can improve your application by a huge lot.
+-->
+
 ---
 layout: center
 ---
@@ -671,3 +960,7 @@ layout: center
     <carbon-logo-linkedin />
   </a>
 </div>
+
+<!--
+Thank you very much!
+-->
